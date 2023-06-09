@@ -1,6 +1,7 @@
 module web.javafx {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.sql;
 
 
     opens web.javafx to javafx.fxml;

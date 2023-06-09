@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.*?>
 <?import javafx.scene.effect.*?>
 <?import java.lang.*?>
 <?import javafx.scene.text.*?>
@@ -7,24 +8,26 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="703.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="web.javafx.controller.OpenController" fx:id="openView"
->
+<AnchorPane fx:id="openView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="703.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="web.javafx.controller.OpenController">
    <children>
-      <SplitPane dividerPositions="0.38944365192582026" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <SplitPane dividerPositions="0.3666191155492154" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="210.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="485.0" prefWidth="314.0">
                <children>
-                  <ImageView fitHeight="502.0" fitWidth="458.0" layoutX="-81.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@image/sideImage.png" />
-                     </image>
-                  </ImageView>
+                  <HBox layoutX="-44.0" prefHeight="485.0" prefWidth="247.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-44.0" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="497.0" fitWidth="390.0" layoutX="-82.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/sideImage.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
                </children>
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                <children>
-                  <SplitPane dividerPositions="0.4554865424430642" orientation="VERTICAL" prefHeight="485.0" prefWidth="425.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <SplitPane dividerPositions="0.4616977225672878" orientation="VERTICAL" prefHeight="485.0" prefWidth="448.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <items>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                            <children>

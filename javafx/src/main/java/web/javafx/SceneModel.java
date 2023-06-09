@@ -8,7 +8,6 @@ import javafx.scene.layout.AnchorPane;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-
 public class SceneModel implements Initializable {
     public static Scene getHelloScene() throws IOException {
         URL openUrl = SceneModel.class.getResource("open-view.fxml");
@@ -29,6 +28,19 @@ public class SceneModel implements Initializable {
         System.out.println(regisUrl);
         assert (regisUrl != null);
         AnchorPane ap = FXMLLoader.load(regisUrl);
+        return new Scene(ap);
+    }
+    //综合api切换页面
+    public static Scene gotoPage(String string, Object... objects){
+        URL pageUrl = SceneModel.class.getResource(string);
+        System.out.println(pageUrl);
+        assert (pageUrl != null);
+        AnchorPane ap = null;
+        try {
+            ap = FXMLLoader.load(pageUrl);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return new Scene(ap);
     }
     @Override

@@ -9,6 +9,10 @@ import web.javafx.SceneModel;
 import java.io.IOException;
 
 public class LoginController {
+    boolean checkUser(){
+        //TODO
+        return true;
+    }
     @FXML
     AnchorPane login;
     @FXML
@@ -20,5 +24,11 @@ public class LoginController {
         Stage stage = (Stage) login.getScene().getWindow();
 //        stage.setScene(SceneModel.goLoginScene());
         stage.setScene(SceneModel.goRegisScene());
+    }
+    @FXML
+    void gotoMain() throws IOException {
+        System.out.println("去往主页面");
+        Stage stage = (Stage) login.getScene().getWindow();
+        stage.setScene(SceneModel.gotoPage("main.fxml"));
     }
 }

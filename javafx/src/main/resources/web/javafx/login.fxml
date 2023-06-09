@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="703.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="web.javafx.controller.LoginController" fx:id="login">
+   <children>
+      <AnchorPane layoutX="223.0" layoutY="150.0" prefHeight="200.0" prefWidth="256.0">
+         <children>
+            <AnchorPane layoutY="55.0" prefHeight="45.0" prefWidth="258.0">
+               <children>
+                  <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="用户名">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <TextField layoutX="81.0" layoutY="11.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="100.0" prefHeight="45.0" prefWidth="258.0">
+               <children>
+                  <TextField layoutX="83.0" layoutY="11.0" prefHeight="23.0" prefWidth="161.0" />
+                  <Text layoutX="14.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密码">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <Text layoutX="73.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="没有账号，点我" />
+            <Hyperlink fx:id="regesterLink" layoutX="157.0" layoutY="170.0" onAction="#gotoRegis" text="注册" />
+         </children>
+      </AnchorPane>
+      <Text layoutX="107.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="欢迎使用本商店系统，请先登录">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="181.0" layoutY="350.0" prefHeight="45.0" prefWidth="324.0">
+         <children>
+            <Button layoutX="114.0" layoutY="7.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="124.0" style="-fx-background-color: #FF8C00; -fx-text-fill: white;" text="点击登录" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
